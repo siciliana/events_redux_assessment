@@ -9,10 +9,8 @@ class User < ActiveRecord::Base
   validates :password, :length => { :minimum => 6, :message => "password must be at least 6 letters, fool!" }
   validates :email, :presence => true
   validates :email, :uniqueness => true
-  # validates :email #, :format => { :with => /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/, :message => "please enter a valid email address." }
+  validates :email, :format => /.+@.+\..+/ #, :message => "please enter a valid email address." }
   validates :password_digest, :presence => true
-
-  # validates :email, :uniqueness => true, :format => /.+@.+\..+/ # imperfect, but okay
 
   include BCrypt
 
