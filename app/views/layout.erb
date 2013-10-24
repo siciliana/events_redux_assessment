@@ -3,29 +3,19 @@
 <head>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/application.css">
-
+  <link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
   <title></title>
 </head>
 <body>
-
-  <nav>
-
-    <div class="brand"><a href="/">Slap a Monkey</a></div>
-
-    <ul>
-      <% if current_user %>
-        <li><a id="sign-out" href="/sessions/<%= current_user.id %>">Sign Out</a></li>
-      <% else %>
-        <li><a href="/sessions/new">Sign In</a></li>
-        <li><a href="/users/new">Sign Up</a></li>
-      <% end %>
-    </ul>
-
-  </nav>
-
+  <div id="topnav">
+    <div id="brand"><img id="cat" src="/images/Grumpy-Cat.jpg">Grumpy Cat Events</div>
+    <% if current_user %>
+      <div id="logout"><a href='/logout'>Logout</a></div>
+    <% end %>
+  </div>
   <%= yield %>
 </body>
 </html>

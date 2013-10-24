@@ -1,11 +1,90 @@
 .container {
   margin: 20px auto;
   width: 800px;
-  padding: 0px 20px 20px 20px;
+  padding: 60px 20px 20px 20px;
   border: 1px dotted black;
+  border-radius: 10px;
 }
 
-.container h1 {
+th {
+  text-align: left;
+}
+
+#topnav {
+  height: 90px;
+  background-color: black;
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+#brand {
+  float: left;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  font-size: 32px;
+  font-family: 'Joti One', cursive;
+}
+
+#brand:hover {
+  color:tomato;
+}
+
+#logout {
+  float: right;
+  height: 50px;
+  padding-right: 20px;
+  padding-top: 0px;
+}
+
+#logout a {
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+#logout a:hover {
+  color: tomato;
+}
+
+.buttons {
+  margin: 10px 0 20px 0;
+}
+
+button {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: lowercase;
+  border-radius: 10px;
+  background-color: tomato;
+}
+
+.buttons form {
+  display:inline;
+  padding: 5px;
+}
+
+li {
+  font-size: 20px;
+}
+
+
+#cat {
+  height:70px;
+  padding:6px;
+
+}
+
+img {
+  padding-top:10px;
+  border-radius: 20%;
+}
+
+/*OLD*/
+
+/*.container h1 {
   font-size: 17pt;
 
 }
@@ -72,4 +151,4 @@ form.quirks {
   text-align: right;
   margin-right: 20px;
   width: 200px;
-}
+}*/
